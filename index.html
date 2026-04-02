@@ -20,7 +20,7 @@ body {
   text-align: center;
 }
 
-/* ナビ追加 */
+/* ナビ修正 */
 .nav {
   position: fixed;
   top: 0;
@@ -28,7 +28,7 @@ body {
   background: #020617;
   padding: 12px 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; /* ←左寄せ */
   z-index: 100;
 }
 
@@ -45,7 +45,7 @@ body {
 /* コンテナ */
 .container {
   max-width: 700px;
-  margin: 100px auto 60px; /* ナビ分調整 */
+  margin: 100px auto 60px;
   padding: 20px;
 }
 
@@ -137,14 +137,7 @@ button:hover {
   font-size: 20px;
 }
 
-.ad-box {
-  margin-top: 40px;
-  padding: 20px;
-  border: 1px dashed #334155;
-  border-radius: 10px;
-  color: #64748b;
-}
-
+/* フッター */
 .footer {
   margin-top: 60px;
   font-size: 12px;
@@ -157,8 +150,7 @@ button:hover {
 
 <!-- ナビ -->
 <div class="nav">
-  <div><strong>NextFeed</strong></div>
-  <a href="https://nextfeed456.github.io/">トップへ戻る</a>
+  <a href="https://nextfeed456.github.io/">← トップへ戻る</a>
 </div>
 
 <div class="container">
@@ -204,7 +196,6 @@ button:hover {
 
   <div class="footer">
     <p>© NextFeed</p>
-    <p>クリエイター向けツールサイト</p>
   </div>
 
 </div>
